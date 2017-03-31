@@ -1,0 +1,588 @@
+/*   
+Theme Name: LightBox
+Theme URI: http://lightbox.com
+Description: LightBox
+Author: 
+Author URI: 
+Version: 1
+*/
+
+/*..............reset css.........*/
+
+*{
+	margin:0px;
+	padding: 0px;
+	
+}
+
+@font-face{
+	font-family: myFirstFont;
+	src:url(css/fonts/duepuntozero.ttf);
+}
+
+@font-face{
+	font-family: myFirstFont;
+	src:url(css/fonts/duepuntozero_bold.ttf);
+	font-weight: bold;
+}
+
+.float_left{
+	float: left;
+}
+
+.float_right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*..............end of reset css.........*/
+
+.selected{
+	background:  url(css/images/menu_hover.png) no-repeat center;
+}
+
+.current{
+	background: url(css/images/recent_bg_hover.png);
+}
+
+.inner_wrapper{
+	width:1002px;
+	margin:0px auto;
+	border-right:1px solid white;
+	border-left:1px solid white;
+}
+
+#wrapper{
+	width: 100%;
+	margin:0px auto;
+	background: #251b17;
+	padding-top:53px;
+}
+
+
+/*...............header css............*/
+#header_area{
+	background: #3b2c25;
+}
+
+#header{
+	height: 213px;
+	background: #2f231e;
+	position: relative;
+	background: #2f231e;
+	border-right: 1px solid #60483c;
+	border-left: 1px solid #60483c;
+}
+
+/*css for header_work*/
+#header_work{
+	background: #30241e;
+	height: 82px;
+	position: relative;//
+	//overflow: hidden;
+	border-right:1px solid #60483c;
+	border-left:1px solid #60483c;
+}
+
+/*css end for header_work*/
+
+#nav{
+	position: absolute;
+	right: 0px;
+	top:-62px;
+}
+
+#nav li{
+	float: left;
+	margin-right: 10px;
+}
+
+#nav li a{
+	display: block;
+	height:97px;
+	width:112px;
+	padding-top: 20px;
+	line-height: 175px;
+	text-align:center;
+	font-family:Arial;
+	color:#c7b18d;
+	background: url(css/images/menu_default.png) no-repeat center;
+	
+}
+
+#nav li a:hover{
+	background: url(css/images/menu_default.png) no-repeat center,url(css/images/menu_hover.png) no-repeat center;
+}
+
+#nav li:nth-child(1) a{
+	background: url(css/images/home.png) no-repeat center;
+}
+
+#nav li:nth-child(2) a{
+	background: url(css/images/work.png) no-repeat center;
+}
+
+#nav li:nth-child(3) a{
+	background: url(css/images/about.png) no-repeat center;
+}
+
+#nav li:nth-child(4) a{
+	background: url(css/images/contact.png) no-repeat center;
+}
+
+#nav li:nth-child(1) a:hover{
+	background: url(css/images/home.png) no-repeat center, url(css/images/menu_hover.png) no-repeat center;
+}
+
+#nav li:nth-child(2) a:hover{
+	background: url(css/images/work.png) no-repeat center, url(css/images/menu_hover.png) no-repeat center;
+}
+
+#nav li:nth-child(3) a:hover{
+	background: url(css/images/about.png) no-repeat center, url(css/images/menu_hover.png) no-repeat center;
+}
+
+#nav li:nth-child(4) a:hover{
+	background: url(css/images/contact.png) no-repeat center, url(css/images/menu_hover.png) no-repeat center;
+}
+
+#logo a{
+	display:block;
+	height:325px;
+	width:259px;
+	position: absolute;
+	bottom:-50px;
+	left:0px;
+	background: url(css/images/logo_box.png) no-repeat;
+}
+
+#slogan{
+	width: 652px;
+	height:124px;
+	position: absolute;
+	left: 165px;
+	top:87px;
+}
+
+#slogan #logo_text{
+	
+	
+}
+
+#slogan #logo_text a{
+	display:block;
+	height:93px;
+	width:124px;
+	
+	background: url(css/images/logo.png) no-repeat center;
+	
+}
+
+#slogan #border_image{
+	width:1px;
+	height:93px;
+	margin-left: 28px;
+	margin-right:28px;
+	background:#4f3b33 url(css/images/margin_bar.png);
+}
+
+#slogan p{
+	display:block;
+	width: 454px;
+	font-size: 17px;
+	font-family:Helvetica;
+	color:#a68a7d;
+	margin-top: 15px;
+}
+
+#slogan p a{
+	color: #ffffff;
+}
+
+/*...............end of header css............*/
+
+
+
+/*...............main_content css............*/
+#main_content_area{
+	background:#eeebe9 url(css/images/body_bg.jpg) repeat-x;
+}
+
+#main_content{
+	background:#f7f5f4 url(css/images/container_bg.jpg) repeat-x;
+	padding-top: 40px;
+	padding-bottom:40px;
+	font-family: Arial;
+}
+
+
+
+#main_content>div{
+	margin-left: 348px;
+	margin-right: 35px;
+}
+
+#primary_content{
+	width: 332px;
+	font-family: Arial;
+}
+
+#primary_content h1{
+	
+	font-family: myFirstFont;
+	font-size: 45px;
+	color: #2f231e;
+	padding-bottom:20px;
+	border-bottom: 1px solid #cec5c0;
+}
+
+#primary_content ul{
+	margin-top: 20px;
+}
+
+#primary_content ul>li{
+	margin-bottom: 30px;
+}
+
+#primary_content #first h2{
+	width:244px;
+	height:34px;
+	background:url(css/images/web_development_logo.png);
+	text-indent: -9999px;
+}
+
+#primary_content #second h2{
+	width:244px;
+	height:34px;
+	background:url(css/images/graphics_logo.png);
+	text-indent: -9999px;
+}
+
+#primary_content #third h2{
+	width:244px;
+	height:34px;
+	background:url(css/images/usability_logo.png);
+	text-indent: -9999px;
+}
+
+#first p, #second p, #third p{
+	margin-left: 50px;
+	font-family: Arial;
+	color: #645a56;
+	font-size: 16px;
+}
+
+#secondary_content{
+	
+}
+
+#qoute{
+	width:200px;
+	padding:0px 23px 40px 27px;
+	background: #ebe7e4;
+}
+
+#qoute p{
+	padding-top:35px;
+	font-family: Georgia;
+	font-style:italic;
+	color: #7f6357;
+	font-size:20px;
+}
+
+#arrow{
+	margin-left: 180px;
+	width:32px;
+	height: 32px;
+	background: url(css/images/arrow.png);
+}
+
+
+#cite{
+	margin-right: 40px;
+	margin-top: 10px;
+	font-family:Arial;
+	font-size: 18px;	
+	color:#2f231e;
+}
+
+#cite span{
+	font-size:16px; 
+	color:#89451f;
+	
+}
+
+
+
+/*...............................................................................................................*/
+.image_number{
+	list-style: none;
+}
+
+.image_number li{
+	float: left;
+	margin-right:10px;
+}
+
+.image_number li a{
+	display:block;
+	width: 22px;
+	height:22px;
+	text-align:center;
+	color:#ffffff;
+	background: url(css/images/recent_bg.png);
+	font-family: Helvetica;
+}
+
+ .image_number li a:hover{
+	display:block;
+	width: 22px;
+	height:22px;
+	background: url(css/images/recent_bg_hover.png);
+}
+/*...............................................................................................................*/
+
+#recent_work h2{
+	margin-bottom: 20px;
+	font-family: myFirstFont;
+	font-size: 45px;
+	color: #2f231e;
+}
+
+.image_gallery{
+	width: 589px;
+	height:287px;
+	padding:15px;
+	border:1px solid #cec5c0;
+}
+
+.image_gallery img{
+	width: 589px;
+	height:287px;
+}
+
+#recent_work+p{
+	margin-top: 10px;
+	margin-bottom: 70px;
+	margin-right: 35px;
+	font-family: Arial;
+	font-size: 14px;
+	color:#4e4d4d;
+}
+
+/*...............css for work_main_content.................*/
+#main_content h1{
+	margin-bottom: 15px;
+	font-family: myFirstFont;
+	color: #2f231e;
+	font-size: 55px;
+}	
+
+
+#project1,#project2{
+	width: 620px;
+	padding-top: 20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	border-top: 1px solid #c9c5c2;
+}
+
+
+#project2{
+	padding-bottom:20px;
+	border-bottom: 1px solid #c9c5c2;
+}
+
+#project1 h3, #project2 h3{
+	margin-bottom:20px;
+	font-family:Helvetica;
+	color:#2f231e;
+	font-size: 30px;
+}
+
+#project1 p, #project2 p{
+	margin:20px 35px 10px 10px;
+	font-family: Arial;
+	color: #4e4d4d;
+	font-size: 16px;
+}
+/*...................css for work_main_content......................*/
+
+
+
+
+
+
+/*............... about_main_content.........................*/
+
+
+#primary_content h3,#primary_content p{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#description{
+	list-style: square;
+	padding-left: 20px;
+}
+
+#description p{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+/*...............end about_main_content.........................*/
+
+
+
+
+/*...............contact_main_content.........................*/
+
+#contact_info h5{
+	color: #342f2c;
+	font-size: 16px;
+}
+
+.horizontal_line{
+	width:100%;
+	height:1px;
+	background:#cec5c0;
+	margin-bottom:20px;
+}
+
+#phone_fax{
+	width:190px;
+	margin-right:55px;
+	margin-top:20px;
+	margin-bottom:40px;
+}
+
+#social_site{
+	width: 150px;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+.right_margin{
+	margin-right: 8px;
+}
+
+form{
+	width:500px;
+	margin-bottom: 70px;
+	color:#645a56;
+}
+
+form input{
+	width: 100%;
+	height:30px;
+	margin-top:10px;
+	margin-bottom: 20px;
+	font-family: Arial;
+}
+
+form input[type=submit]{
+	width:102px;
+	height:34px;
+	background: url(css/images/submit_bg.png) no-repeat;
+}
+
+textarea{
+	width: 100%;
+	height:200px;
+	max-height:250px;
+	max-width: 500px;
+	min-height:150px;
+	min-width:350px;
+	margin-top:10px;
+}
+/*...............contact_main_content.........................*/
+
+
+/*...............end of main_content css............*/
+
+
+
+/*...............footer css............*/
+
+#footer_area{
+	background: #3b2c25;
+	height:94px;
+	
+}
+
+#footer{
+	font-size:14px;
+	height:94px;
+	background: #32251f;
+	position: relative;
+	border-right:1px solid #574138;
+	border-left:1px solid #574138;
+}
+
+#footer_logo{
+	background:#291e18;
+	width:346px;
+	height:94px;
+	border-right:1px solid #574138;
+	border-left:1px solid #574138;
+	
+}
+
+#footer_logo>a{
+	display:block;
+	height:68px;
+	width:138px;
+	background:url(css/images/footer_logo.png);
+	position: absolute;
+	left:95px;
+	top:13px;
+	
+}
+
+#footer_content{
+	width:654px;
+	height:94px;
+	font-family:Arial;
+	color:#8a7266;
+	font-size:13px;
+	position: absolute;
+	left:348px;
+	top:0px;
+}
+
+#footer #footer_content>div{
+	margin-top:33px;
+}
+
+
+#footer #footer_content #copy_right{
+	margin-right:30px;
+	margin-left:50px;
+}
+
+#footer #footer_content div.float_left{
+	margin-left:20px;
+}
+
+#footer span{
+	color:#fff;
+	//font-size:10px;
+	padding:2px;
+}
+
+
+/*...............end of footer css............*/
+
+
